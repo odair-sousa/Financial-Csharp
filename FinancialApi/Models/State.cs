@@ -8,5 +8,6 @@ namespace FinancialApi.Models
         public DateTime CreatedAt { get; set; }
         public DateTime? AlteredAt { get; set; }
         public DateTime? DeletedAt { get; set; }
+        public int CountrieId { get; set; }
     }
 }

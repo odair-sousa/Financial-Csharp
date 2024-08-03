@@ -10,7 +10,9 @@ namespace FinancialApi
         public DateTime DueDate { get; set; }
         public bool Deleted { get; set; }
         public DateTime CreatedAt { get; set; }
-        public DateOnly? AlteredAt { get; set; }
-        public DateOnly? DeletedAt { get; set; }
+        public DateTime? AlteredAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public int? PeopleId { get; set; }
+        public int BalancePeriodId { get; set; }
     }
 }
