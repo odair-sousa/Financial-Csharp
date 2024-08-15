@@ -8,9 +8,12 @@ namespace FinancialApi.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Address> builder)
         {
-            builder.ToTable("addresses");
+            builder.ToTable("address");
 
             builder.HasKey(e => e.Id);
+
+            builder.Property(e => e.Id)
+                .HasColumnName("id");
 
             builder.Property(e => e.NeighborHood)
                 .HasColumnName("neighborhood");

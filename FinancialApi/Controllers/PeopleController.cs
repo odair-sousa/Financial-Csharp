@@ -31,7 +31,7 @@ namespace FinancialApi.Controllers
             var people = await context
                 .People
                 .AsNoTracking()
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync(x => x.Id == id);
             return Ok(people);
         }
 

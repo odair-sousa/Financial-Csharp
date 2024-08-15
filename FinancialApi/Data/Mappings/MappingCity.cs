@@ -8,7 +8,7 @@ namespace FinancialApi.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<City> builder)
         {
-            builder.ToTable("cities");
+            builder.ToTable("citie");
 
             builder.HasKey(e => e.Id);
 
