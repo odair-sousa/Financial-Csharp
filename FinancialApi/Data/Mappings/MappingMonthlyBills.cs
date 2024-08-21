@@ -11,6 +11,9 @@ namespace FinancialApi.Data.Mappings
 
             builder.HasKey(e => e.Id);
 
+            builder.Property(e => e.Id)
+                .HasColumnName("id");
+
             builder.Property(e => e.Name)
                 .HasColumnName("name");
 

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialApi", "FinancialApi\FinancialApi.csproj", "{1DF99666-89E4-4AA4-9F53-0C18DE5F27BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialApi", "FinancialApi\FinancialApi.csproj", "{C3F5DD8E-B62E-4A96-81DD-D4317A80E577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1DF99666-89E4-4AA4-9F53-0C18DE5F27BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DF99666-89E4-4AA4-9F53-0C18DE5F27BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DF99666-89E4-4AA4-9F53-0C18DE5F27BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DF99666-89E4-4AA4-9F53-0C18DE5F27BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F5DD8E-B62E-4A96-81DD-D4317A80E577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F5DD8E-B62E-4A96-81DD-D4317A80E577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F5DD8E-B62E-4A96-81DD-D4317A80E577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F5DD8E-B62E-4A96-81DD-D4317A80E577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

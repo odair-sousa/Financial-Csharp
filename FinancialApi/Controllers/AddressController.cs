@@ -7,10 +7,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FinancialApi.Controllers
 {
-    [Route("address")]
     public class AddressController : ControllerBase
     {
         [HttpGet]
+        [Route("/getAddress")]
         public async Task<ActionResult<List<Address>>> Get(
             [FromServices] DataContext context
         )
@@ -23,7 +23,7 @@ namespace FinancialApi.Controllers
         }
 
         [HttpGet]
-        [Route("{id:int}")]
+        [Route("getAddressById/{id:int}")]
         public async Task<ActionResult<Address>> GetById(
             int id,
             [FromServices] DataContext context
@@ -37,6 +37,7 @@ namespace FinancialApi.Controllers
         }
 
         [HttpPost]
+        [Route("createAddress")]
         public async Task<ActionResult<Address>> Post(
             [FromBody] Address model,
             [FromServices] DataContext context
@@ -58,7 +59,7 @@ namespace FinancialApi.Controllers
         }
 
         [HttpPut]
-        [Route("{id:int}")]
+        [Route("editAddress/{id:int}")]
         public async Task<ActionResult<List<Address>>> Put(
             int id,
             [FromBody] Address model,
@@ -84,7 +85,7 @@ namespace FinancialApi.Controllers
         }
 
         [HttpDelete]
-        [Route("{id:int}")]
+        [Route("deleteAddress/{id:int}")]
         public async Task<ActionResult<Address>> Delete(
             int id,
             [FromServices] DataContext context
