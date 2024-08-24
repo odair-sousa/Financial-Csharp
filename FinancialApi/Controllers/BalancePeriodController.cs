@@ -58,7 +58,7 @@ namespace FinancialApi.Controllers
 
         [HttpPut]
         [Route("/editBalancePeriod")]
-        public async Task<ActionResult<BalancePeriod>> Put(
+        public async Task<ActionResult<List<BalancePeriod>>> Put(
             int id,
             [FromBody] BalancePeriod model,
             [FromServices] DataContext context

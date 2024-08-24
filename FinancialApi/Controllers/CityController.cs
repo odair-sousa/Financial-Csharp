@@ -58,7 +58,7 @@ namespace FinancialApi.Controllers
 
         [HttpPut]
         [Route("editCity/{id:int}")]
-        public async Task<ActionResult<City>> Put(
+        public async Task<ActionResult<List<City>>> Put(
             int id,
             [FromBody] City model,
             [FromServices] DataContext context
