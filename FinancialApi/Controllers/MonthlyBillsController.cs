@@ -91,7 +91,6 @@ namespace FinancialApi.Controllers
         {
             var monthlyBills = await context
                 .MonthlyBills
-                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             if (monthlyBills == null)
